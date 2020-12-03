@@ -23,3 +23,4 @@ Feature: Test fixture test suite
 
     Scenario: Test case 2
       * print "From Test case 2"
+      * print "CI Demo"
