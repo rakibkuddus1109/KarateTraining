@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/featurefiles/karate09.feature" skipped="0" tests="1" time="1.382667">
+  <testcase classname="src.test.java.featurefiles.karate09" name="URL &amp; Path usage test case Test Case 2" time="1.382667">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users" ..................................................... passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == "##" ........................................... passed</system-out>
+  </testcase>
+</testsuite>

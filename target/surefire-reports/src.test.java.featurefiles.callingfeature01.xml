@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/featurefiles/callingfeature01.feature" skipped="0" tests="1" time="1.749572">
+  <testcase classname="src.test.java.featurefiles.callingfeature01" name="Calling test case 01" time="1.749572">
+    <system-out>* def result = call read('calledfeature01.feature') ....................... passed
+* print result ............................................................ passed
+* match result.responseType == "json" ..................................... passed
+* match result.responseHeaders.Transfer-Encoding[0] == "chunked" .......... passed
+* match result.response.data[0].name == "cerulean" ........................ passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.featurefiles.karate08</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-02 04:36:28 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:4]">[1:4] Create fetch update delete employee test </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/featurefiles/karate08.feature</span><span class="feature-description">Karate Test Suite 8 | REST API end to end testing</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:4]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Create fetch update delete employee test </span>
+</div>
+<div class="scenario-time passed">ms: 6149</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "http://dummy.restapiexample.com/api/v1/create"</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="1">16:36:21.793 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And request {"name":"Rakib","salary":"891","age":"32"}</div>
+</div>
+<div class="time-cell passed">102</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">2042</div>
+</div>
+<div class="preformatted" data-parent="3">16:36:22.529 request:
+1 &gt; POST http://dummy.restapiexample.com/api/v1/create
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 42
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"Rakib","salary":"891","age":"32"}
+
+16:36:23.951 response time in milliseconds: 1434.08
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private, max-age=31536000
+1 &lt; Content-Length: 129
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 02 Dec 2020 11:15:14 GMT
+1 &lt; Display: staticcontent_sol
+1 &lt; Expires: Thu, 02 Dec 2021 11:15:14 GMT
+1 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; Referrer-Policy: 
+1 &lt; Response: 200
+1 &lt; Server: nginx/1.16.0
+1 &lt; Vary: [Accept-Encoding, Accept-Encoding,Origin]
+1 &lt; X-Ezoic-Cdn: Miss
+1 &lt; X-Middleton-Display: staticcontent_sol
+1 &lt; X-Middleton-Response: 200
+1 &lt; X-Ratelimit-Limit: 60
+1 &lt; X-Ratelimit-Remaining: 58
+1 &lt; X-Sol: pub_site
+{"status":"success","data":{"name":"Rakib","salary":"891","age":"32","id":4778},"message":"Successfully! Record has been added."}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* def id = response.data.id</div>
+</div>
+<div class="time-cell passed">25</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* match response.data.name == "Rakib"</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* print id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">16:36:23.998 [print] 4778</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given url "http://dummy.restapiexample.com/api/v1/employee/" + id</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">997</div>
+</div>
+<div class="preformatted" data-parent="9">16:36:23.998 request:
+2 &gt; GET http://dummy.restapiexample.com/api/v1/employee/4778
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: dummy.restapiexample.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:36:25.007 response time in milliseconds: 993.71
+2 &lt; 200
+2 &lt; Cache-Control: no-cache, private, max-age=31536000
+2 &lt; Content-Length: 83
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 02 Dec 2020 11:15:15 GMT
+2 &lt; Display: staticcontent_sol
+2 &lt; Expires: Thu, 02 Dec 2021 11:15:15 GMT
+2 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2 &lt; Referrer-Policy: 
+2 &lt; Response: 200
+2 &lt; Server: nginx/1.16.0
+2 &lt; Vary: [Accept-Encoding, Accept-Encoding,User-Agent,Origin]
+2 &lt; X-Ezoic-Cdn: Miss
+2 &lt; X-Middleton-Display: staticcontent_sol
+2 &lt; X-Middleton-Response: 200
+2 &lt; X-Ratelimit-Limit: 60
+2 &lt; X-Ratelimit-Remaining: 58
+2 &lt; X-Sol: pub_site
+{"status":"success","data":null,"message":"Successfully! Record has been fetched."}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given url "http://dummy.restapiexample.com/api/v1/update/" + id</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And request {"name":"Rakib","salary":"891","age":"35"}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When method PUT</div>
+</div>
+<div class="time-cell passed">998</div>
+</div>
+<div class="preformatted" data-parent="13">16:36:25.015 request:
+3 &gt; PUT http://dummy.restapiexample.com/api/v1/update/4778
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Length: 42
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: dummy.restapiexample.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"Rakib","salary":"891","age":"35"}
+
+16:36:25.998 response time in milliseconds: 993.85
+3 &lt; 200
+3 &lt; Cache-Control: no-cache, private, max-age=31536000
+3 &lt; Content-Length: 121
+3 &lt; Content-Type: application/json
+3 &lt; Date: Wed, 02 Dec 2020 11:15:16 GMT
+3 &lt; Display: staticcontent_sol
+3 &lt; Expires: Thu, 02 Dec 2021 11:15:16 GMT
+3 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+3 &lt; Referrer-Policy: 
+3 &lt; Response: 200
+3 &lt; Server: nginx/1.16.0
+3 &lt; Vary: [Accept-Encoding, Accept-Encoding,Origin]
+3 &lt; X-Ezoic-Cdn: Miss
+3 &lt; X-Middleton-Display: staticcontent_sol
+3 &lt; X-Middleton-Response: 200
+3 &lt; X-Ratelimit-Limit: 60
+3 &lt; X-Ratelimit-Remaining: 58
+3 &lt; X-Sol: pub_site
+{"status":"success","data":{"name":"Rakib","salary":"891","age":"35"},"message":"Successfully! Record has been updated."}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Given url "http://dummy.restapiexample.com/api/v1/delete/" + id</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method DELETE</div>
+</div>
+<div class="time-cell passed">962</div>
+</div>
+<div class="preformatted" data-parent="16">16:36:26.013 request:
+4 &gt; DELETE http://dummy.restapiexample.com/api/v1/delete/4778
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: dummy.restapiexample.com
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:36:26.984 response time in milliseconds: 957.93
+4 &lt; 200
+4 &lt; Cache-Control: no-cache, private, max-age=31536000
+4 &lt; Content-Length: 84
+4 &lt; Content-Type: application/json
+4 &lt; Date: Wed, 02 Dec 2020 11:15:17 GMT
+4 &lt; Display: staticcontent_sol
+4 &lt; Expires: Thu, 02 Dec 2021 11:15:17 GMT
+4 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+4 &lt; Referrer-Policy: 
+4 &lt; Response: 200
+4 &lt; Server: nginx/1.16.0
+4 &lt; Vary: [Accept-Encoding, Accept-Encoding,Origin]
+4 &lt; X-Ezoic-Cdn: Miss
+4 &lt; X-Middleton-Display: staticcontent_sol
+4 &lt; X-Middleton-Response: 200
+4 &lt; X-Ratelimit-Limit: 60
+4 &lt; X-Ratelimit-Remaining: 58
+4 &lt; X-Sol: pub_site
+{"status":"success","data":"4778","message":"Successfully! Record has been deleted"}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Given url "http://dummy.restapiexample.com/api/v1/employee/" + id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">985</div>
+</div>
+<div class="preformatted" data-parent="19">16:36:26.994 request:
+5 &gt; GET http://dummy.restapiexample.com/api/v1/employee/4778
+5 &gt; Accept-Encoding: gzip,deflate
+5 &gt; Connection: Keep-Alive
+5 &gt; Host: dummy.restapiexample.com
+5 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:36:27.967 response time in milliseconds: 981.55
+5 &lt; 200
+5 &lt; Cache-Control: no-cache, private, max-age=31536000
+5 &lt; Content-Length: 83
+5 &lt; Content-Type: application/json
+5 &lt; Date: Wed, 02 Dec 2020 11:15:18 GMT
+5 &lt; Display: staticcontent_sol
+5 &lt; Expires: Thu, 02 Dec 2021 11:15:18 GMT
+5 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+5 &lt; Referrer-Policy: 
+5 &lt; Response: 200
+5 &lt; Server: nginx/1.16.0
+5 &lt; Vary: [Accept-Encoding, Accept-Encoding,User-Agent,Origin]
+5 &lt; X-Ezoic-Cdn: Miss
+5 &lt; X-Middleton-Display: staticcontent_sol
+5 &lt; X-Middleton-Response: 200
+5 &lt; X-Ratelimit-Limit: 60
+5 &lt; X-Ratelimit-Remaining: 58
+5 &lt; X-Sol: pub_site
+{"status":"success","data":null,"message":"Successfully! Record has been fetched."}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

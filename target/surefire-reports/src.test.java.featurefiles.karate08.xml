@@ -1,0 +1,24 @@
+<testsuite failures="0" name="src/test/java/featurefiles/karate08.feature" skipped="0" tests="1" time="6.149261">
+  <testcase classname="src.test.java.featurefiles.karate08" name="Create fetch update delete employee test" time="6.149261">
+    <system-out>Given url "http://dummy.restapiexample.com/api/v1/create" ................. passed
+And request {"name":"Rakib","salary":"891","age":"32"} .................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.data.id ............................................... passed
+* match response.data.name == "Rakib" ..................................... passed
+* print id ................................................................ passed
+Given url "http://dummy.restapiexample.com/api/v1/employee/" + id ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "http://dummy.restapiexample.com/api/v1/update/" + id ........... passed
+And request {"name":"Rakib","salary":"891","age":"35"} .................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+Given url "http://dummy.restapiexample.com/api/v1/delete/" + id ........... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+Given url "http://dummy.restapiexample.com/api/v1/employee/" + id ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
